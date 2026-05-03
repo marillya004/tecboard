@@ -1,0 +1,112 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+/*Reset CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Estilo Desktop*/
+body{
+    background-color: #0E1014;
+} 
+
+.logo {
+    display:block;
+    margin: 75px 0 0 80px;
+    
+}
+
+h1 {
+    font-size: 64px;
+    font-family: "Unbounded";
+    font-weight: bold; /* peso da fonte */
+    font-display: swap; /*se a fonte Unbounded demorar para carregar */
+    text-align: center;
+    color: #FFFFFF;
+    margin: 60px auto 24px;
+}
+
+h1 span { /*Deixa-se bem definido para caso haja outro spam e eu não queira que esse outro tenha a mesma formatação que o primeiro */
+    color: #9747FF;
+}
+
+p {
+    font-family: "Poppins", sans-serif; /*o 'sans-serif' é uma fonte genérica que será usada se a fonte principal não estiver disponível */
+    font-size: 24px;
+    font-weight: 400;
+    font-display: swap;
+    text-align: center;
+    color: #FFFFFF;
+    width: 792px;
+    margin: 24px auto 0;
+}
+
+a {
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    text-decoration: none; /*remove o sublinhado padrão dos links*/
+    text-align: center;
+    width: 340px;
+    height: 66px;
+    line-height: 66px; /*alinha o texto verticalmente dentro do link*/
+    background-color: #9747FF;
+    display: block; /*faz com que o link se comporte como um bloco, permitindo definir largura e altura */
+    border-radius: 36px;
+    margin: 40px auto;
+}
+
+a:hover {
+    background-color: #8233E8;
+}
+
+.celulares {
+    display: block;
+    width: 792px;
+    height: 446px;
+    margin: 0 auto;
+}
+
+/*Tablet*/
+@media(max-width: 768px) {
+    .logo {
+        margin: 65px 0 0 60px;
+    }
+
+    p {
+        width: 648px;
+    }
+}
+
+/*Mobile*/
+@media(max-width: 375px) {
+    .logo {
+        margin: 32px 0 0 16px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+        width: 340px;
+    }
+
+    .celulares {
+        width: 340px;
+        height: 230px;
+    }
+
+    a {
+        font-size: 20px;
+        width: 251px;
+    }
+
+}
+
+
